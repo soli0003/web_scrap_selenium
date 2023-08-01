@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    1: <input type="text" name="user" id="username"> <br>
+    2: <input type="text" name="pwd" id="password"> <br>
+    3: <button name="Submit" onclick="validateCredentials(username.value, password.value)">Submit</button> <br>
+    <h1 id="message"></h1>
+</body>
+
+
+<script>
+    function validateCredentials(username, password) {
+        console.log(username,password)
+        if (username == "eyal" && password == "123") {
+          message.innerHTML= "good"
+        } else {
+            message.innerHTML= "bad"
+        }
+      }
+      
+
+
+
+
+</script>
+
+</html>
